@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <body>
+        <h1>ASCENDING AND DESCENDING</h1>
+        <button onclick="hi()">CLICK HERE FOR ASCENDING</button>
+        <button onclick="hello()">CLICK HERE FOR DESCENDING</button>
+        <h4 id="h5"></h4>
+        <script>
+            var y=[39,76,2,746,81,4563,78];
+            document.getElementById("h5").innerHTML=y;
+            function hi(){
+                y.sort(function(a,b){ return a-b});
+                document.getElementById("h5").innerHTML=y;
+                }
+            function hello(){
+                y.sort(function(a,b){ return b-a});
+                document.getElementById("h5").innerHTML=y;
+            }    
+            
+
+        </script>
+    </body>
+</html>
